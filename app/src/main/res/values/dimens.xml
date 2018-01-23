@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_margin_bottom">80dp</dimen>
+    <dimen name="app_margin_top">50dp</dimen>
+    <dimen name="app_align_text">150dp</dimen>
+    <dimen name="app_edit_text_width">150dp</dimen>
+    <dimen name="total">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pic_margin_top">30dp</dimen>
+    <dimen name="padding_top_button">30dp</dimen>
+    <dimen name="font_size">20dp</dimen>
+    <dimen name="splash_screen_marginTop">120dp</dimen>
+    <dimen name="text_margin_bottom">10dp</dimen>
+    <dimen name="margin_bottom">40dp</dimen>
+    <dimen name="margin_img_main">80dp</dimen>
+    <dimen name="margin_text_main">30dp</dimen>
+    <dimen name="text_margin_main">30dp</dimen>
+    <dimen name="personal_Area_width">95dp</dimen>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ShapeIt</string>
+
+    <!--logon screen-->
+    <string name="customer_name">שם משתמש</string>
+    <string name="password">סיסמה</string>
+    <string name="reset_password">שחזור סיסמה</string>
+    <string name="stay_connect">הישאר מחובר</string>
+    <string name="enter">היכנס</string>
+    <string name="title_activity_splash__screen">Splash_Screen</string>
+    <string name="title_activity_splash_screen1">splash_screen1</string>
+    <string name="first_name">שם פרטי:</string>
+    <string name="last_name">ש.משפחה:</string>
+    <string name="c_id">ת.ז:</string>
+    <string name="email">אי-מייל:</string>
+    <string name="subscriber_type">סוג מנוי:</string>
+    <string name="subscriber_balance">יתרה:</string>
+    <string name="subscriber_validity">תוקף:</string>
+    <string name="height">גובה:</string>
+    <string name="weight">משקל:</string>
+    <string name="title_message">כותרת ההודעה</string>
+    <string name="body_message">גוף הההודעה</string>
+
+    <string name="month_prompt">Choose a country</string>
+
+    <string-array name="month_selection">
+        <item>ינואר</item>
+        <item>פברואר </item>
+        <item>מרץ</item>
+        <item>אפריל</item>
+        <item>מאי</item>
+        <item>יוני</item>
+        <item>יולי</item>
+        <item>אוגוסט</item>
+        <item>ספטמבר</item>
+        <item>אוקטובר</item>
+        <item>נובמבר</item>
+        <item>דצמבר</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- ###################################################################################### -->
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorAppBackground"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- ############################################### -->
+        <ImageView
+            android:id="@+id/gsn"
+            android:layout_width="327dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/app_margin_bottom"
+            android:layout_marginTop="@dimen/pic_margin_top"
+            android:layout_weight="0.15"
+            android:scaleType="fitXY"
+            android:src="@drawable/gsn" />
+        <!-- ############################################### -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_top_button"
+            android:background="@color/colorAppBackground"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="@string/customer_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size" />
+
+
+            <EditText
+                android:id="@+id/us_n"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <!-- ############################################### -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.09"
+            android:background="@color/colorAppBackground"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="@string/password"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+        <!-- ############################################### -->
+        <CheckBox
+            android:id="@+id/stay_connect"
+            android:layout_width="@dimen/total"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="-8dp"
+            android:layout_marginTop="20dp"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+            android:text="@string/stay_connect"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_size" />
+
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/text_margin_bottom"
+            android:layout_marginTop="@dimen/app_margin_top"
+            android:elevation="0dp"
+            android:text="@string/enter"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/font_size" />
+
+        <Button
+            android:id="@+id/reset_Password"
+            android:layout_width="124dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.05"
+            android:background="@drawable/my_button"
+            android:elevation="0dp"
+            android:text="@string/reset_password"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textSize="@dimen/font_size" />
+        <!-- ############################################### -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:background="@color/colorAppBackground"
+        android:gravity="center|top"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/title_resetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="שחזור סיסמה"
+            android:textColor="@color/cs_textcolor"
+            android:textSize="30dp" />
+
+        <!-- ###################################################################################### -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/input_email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="אנא הכנס כתובת אי-מייל:"
+                android:textColor="@color/textViewColor"
+                android:textDirection="rtl"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="@color/colorAppBackground"
+            android:gravity="center|top"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text=""
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Approval_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="80dp"
+                android:text="אישור"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+        <!-- ###################################################################################### -->
+
+
+    </LinearLayout>
+
+
+    <!-- ###################################################################################### -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- ############################################### -->
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorMaineBackground"
+            android:text="התנתק"
+            android:textColor="@color/cs_textcolor"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_main" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@color/colorMaineBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorMaineBackground"
+
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/TimeTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="מערכת שעות"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+            <!-- ############################################### -->
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/personal_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorMaineBackground"
+                    android:src="@drawable/personal_area" />
+
+                <TextView
+                    android:id="@+id/personalarea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="אזור אישי"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/font_size" />
+
+            </LinearLayout>
+            <!-- ############################################### -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorMaineBackground"
+                    android:src="@drawable/notification" />
+
+                <TextView
+                    android:id="@+id/notification1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="התראות"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/navigate_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorMaineBackground"
+                    android:src="@drawable/navigate" />
+
+                <TextView
+                    android:id="@+id/navigate_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="ניווט"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+            <!-- ############################################### -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:background="@color/colorMaineBackground"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+
+        <!-- ###################################################################################### -->
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center|bottom"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="40dp"
+            android:paddingTop="50dp"
+            android:weightSum="1">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+    </LinearLayout>
+
+    <!-- ###################################################################################### -->
+
+    <LinearLayout
+        android:id="@+id/personalAreaPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorMaineBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/hello_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:ems="5"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="100dp">
+
+
+            <Button
+                android:id="@+id/personal_detail"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAppBackground"
+                android:gravity="center"
+                android:text="פרטים אישיים"
+                android:textColor="@color/textViewColor"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/update_detail"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAppBackground"
+                android:gravity="center"
+                android:text="עדכון פרטים"
+                android:textColor="@color/textViewColor"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/progress"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAppBackground"
+                android:gravity="center"
+                android:text="התקדמות אישית"
+                android:textColor="@color/textViewColor"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ###################################################################################### -->
+
+
+    <LinearLayout
+        android:id="@+id/Personal_Detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorMaineBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="פרטים אישיים:"
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/first_name"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/last_name"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/lesName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/C_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/c_id"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/C_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/mail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/height"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/height1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/weight"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type_of_subscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/subscriber_type"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/type_of_subscription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subscription_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/subscriber_balance"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/subscription_balance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subscription_validity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/subscriber_validity"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/subscription_validity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:ems="12"
+                android:gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <!-- ###################################################################################### -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/updateDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/colorMaineBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/UpdateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="center_vertical|right"
+            android:text="עדכון פרטים אישיים"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorMaineBackground"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/email_update"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="אי-מייל"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+
+            <EditText
+                android:id="@+id/eM_update"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="12"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        //------------------------------------------------------------------------------------------
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/iconBackground"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password_update"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="סיסמה"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/pass_update"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="12"
+                android:gravity="center"
+                android:inputType="textPassword" />
+
+            <!-- ###################################################################################### -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorMaineBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/height_update"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="גובה"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/Height_update"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="12"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+            //---------------------------------------------------------------------------------
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorMaineBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weight_update"
+                android:layout_width="@dimen/app_align_text"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="משקל"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/textViewColor"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/Weight_update"
+                android:layout_width="@dimen/app_edit_text_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="12"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+            //-----------------------------------------------------------------------------------------
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorMaineBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/text_margin_bottom"
+                android:layout_marginTop="@dimen/app_margin_top"
+                android:elevation="0dp"
+                android:text="שמור"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/font_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    //-----------------------------------------------------------------------------------------
+
+    <LinearLayout
+        android:id="@+id/navigate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:background="@color/colorMaineBackground"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/titleLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ניווט"
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="right"
+            android:text="עמק יזרעאל קיבוץ יפעת הארזים 7/5"
+            android:textColor="@color/textViewColor"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/waze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@color/colorMaineBackground"
+            android:paddingTop="60dp"
+            android:src="@drawable/waze_icon" />
+
+
+    </LinearLayout>
+
+    //-----------------------------------------------------------------------------------------
+
+    <LinearLayout
+        android:id="@+id/notificationPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorMaineBackground"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center|top"
+            android:text="התראות"
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+        <ListView
+            android:id="@+id/listv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/custom_divider"
+            android:dividerHeight="4dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ScrollView>
+    </LinearLayout>
+    //-----------------------------------------------------------------------------------------
+    <LinearLayout
+        android:id="@+id/layout_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorMaineBackground"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/title_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="25dp"
+            android:text="@string/title_message"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/textViewColor"
+            android:textSize="@dimen/font_size"
+            />
+
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:paddingTop="50dp"
+                android:text="@string/body_message"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorAppBackground"
+                android:textSize="16dp"
+                />
+            <!-- ############################################### -->
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PersonalProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMaineBackground"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:id="@+id/progressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center|top"
+            android:text="התקדמות אישית"
+            android:textColor="@color/textViewColor"
+            android:textSize="30dp" />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+        </WebView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/enterWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="משקל:"
+                android:paddingLeft="5dp"
+                android:textColor="@color/textViewColor"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/weight_input"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                android:ems="5"
+                android:gravity="right"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorMaineBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/selectMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="חודש:"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAppBackground"
+                    android:entries="@array/month_selection"
+                    android:prompt="@string/month_prompt"
+                    android:spinnerMode="dropdown"
+                    android:textDirection="rtl">
+
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom">
+
+            <Button
+                android:id="@+id/saveProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="0dp"
+                android:text="שמור"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
